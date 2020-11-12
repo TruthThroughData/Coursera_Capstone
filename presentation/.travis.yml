@@ -13,7 +13,7 @@ install:
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert capstone - Barcelona - presentation.ipynb --to slides --no-imput --reveal-prefix=reveal.js
+    - jupyter nbconvert 'capstone - Barcelona - presentation.ipynb' --to slides --no-imput --reveal-prefix=reveal.js
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
